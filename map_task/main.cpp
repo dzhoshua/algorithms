@@ -20,7 +20,7 @@ int main()
         auto t2 = chrono::high_resolution_clock::now();
         auto elapsed = std::chrono::duration_cast<std::chrono::nanoseconds>(t2 - t1);
         cout << n << " " << int(elapsed.count()) << " " << sizeof(mmap) + 2 * n * sizeof(int) << endl;
-        out << n << " " << int(elapsed.count()) <<" "<<sizeof(mmap) + n * mmap.size() << endl;
+        out << n << " " << int(elapsed.count()) <<" "<<sizeof(mmap) + 2 * n * sizeof(int) << endl;
         n *= 10;
     }
     return 0;
