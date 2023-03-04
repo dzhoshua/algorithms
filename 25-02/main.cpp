@@ -13,10 +13,10 @@ string func(string path) {
 		if (entry.is_regular_file()) {
 			ifstream in(entry.path().string());
 			if (!in.is_open()) return "error";
-			int num;
-			while (!in.eof()) {
-				in >> num;
-				sum += num;
+			string line;
+			while (getline(in,line)) {
+				//cout << stoi(line) << endl;
+				sum += stoi(line);
 			}
 			in.close();
 		}
