@@ -1,13 +1,13 @@
 CC = g++
 CFLAGS = -std=c++17 -Wall -pedantic
-SOURCES = ndarray.cpp
+SOURCES = main.cpp
 
 ifeq ($(OS), Windows_NT)
 	RM = del
-	TARGET = ndarray.exe
+	TARGET = main.exe
 else
 	RM = rm
-	TARGET = ndarray
+	TARGET = main
 endif
 
 all:
