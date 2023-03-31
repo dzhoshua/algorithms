@@ -49,7 +49,7 @@ protected:
                     arr[x] = other.arr[x];
                     break;
                 default:
-                    throw "unknown operator!";
+                    throw invalid_argument("Unknown operator!");
                     break;
                 }
             }
@@ -315,13 +315,13 @@ public:
     void display() {
         for (int x = 0; x < j; x++)
         {
-            for (int y = 0; y < this->i; y++)
+            for (int y = 0; y < i; y++)
             {
-                std::cout << arr[i * x + y] << ' ';
+                cout << arr[i * x + y] << ' ';
             }
-            std::cout << std::endl;
+            cout <<endl;
         }
-        std::cout << std::endl;
+        cout << endl;
     }
     
 
