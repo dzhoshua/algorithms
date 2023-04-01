@@ -354,7 +354,7 @@ int main() {
     cout << "a/c\n";
     (a/c).display();
 
-    cout << "Matmul: " << endl;
+    cout << "Matmul a c: " << endl;
     c.matmul(a.transpose()).display();
 
     cout << "---Reduction operations: min, max, mean---\n";
