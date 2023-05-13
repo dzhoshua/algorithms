@@ -68,5 +68,5 @@ duplicates_buz, time3 = find_duplicates(os.listdir('out'), hash_buz)
 print("hash_buz\t", len(duplicates_buz), "\t", time3, "s")
 
 duplicates_py, time4 = find_duplicates(os.listdir('out'), hash_py)
-print("hash_py\t", len(duplicates_py), "\t", time4, "s")
+print("hash_py\t\t", len(duplicates_py), "\t", time4, "s")
 
